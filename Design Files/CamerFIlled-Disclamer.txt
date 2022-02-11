@@ -1,0 +1,1 @@
+CameraFilled is derived from SF Symbols. Do not use for anything else than iOS Development or UI-UX Design. Don't be dumb and don't get sued.
