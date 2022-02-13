@@ -16,7 +16,7 @@ Main goals though that I'd target are as the following-
 
 - Create better food decisions by a click of a image
 - Create a user-friendly app that is not only enjoyable, but quick and responsive
-- Let lazy people have better decisions plus faster decisions.
+- Let lazy people have better decisions and faster decisions.
 
 
 ## The end of the trail
