@@ -7,27 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3104D12227B17EFC005A9C27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3104D12127B17EFC005A9C27 /* AppDelegate.swift */; };
-		3104D12427B17EFC005A9C27 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3104D12327B17EFC005A9C27 /* SceneDelegate.swift */; };
-		3104D12627B17EFC005A9C27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3104D12527B17EFC005A9C27 /* ViewController.swift */; };
-		3104D12927B17EFC005A9C27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3104D12727B17EFC005A9C27 /* Main.storyboard */; };
-		3104D12B27B17EFE005A9C27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3104D12A27B17EFE005A9C27 /* Assets.xcassets */; };
-		3104D12E27B17EFE005A9C27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3104D12C27B17EFE005A9C27 /* LaunchScreen.storyboard */; };
+		31B66C8C27BD9B250048D727 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B66C8B27BD9B250048D727 /* AppDelegate.swift */; };
+		31B66C8E27BD9B250048D727 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B66C8D27BD9B250048D727 /* SceneDelegate.swift */; };
+		31B66C9027BD9B250048D727 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B66C8F27BD9B250048D727 /* ViewController.swift */; };
+		31B66C9327BD9B250048D727 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31B66C9127BD9B250048D727 /* Main.storyboard */; };
+		31B66C9527BD9B260048D727 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31B66C9427BD9B260048D727 /* Assets.xcassets */; };
+		31B66C9827BD9B260048D727 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31B66C9627BD9B260048D727 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3104D11E27B17EFC005A9C27 /* TexasMeat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TexasMeat.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		3104D12127B17EFC005A9C27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3104D12327B17EFC005A9C27 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3104D12527B17EFC005A9C27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3104D12827B17EFC005A9C27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3104D12A27B17EFE005A9C27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3104D12D27B17EFE005A9C27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		3104D12F27B17EFE005A9C27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31B66C8827BD9B250048D727 /* TexasMeat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TexasMeat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		31B66C8B27BD9B250048D727 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		31B66C8D27BD9B250048D727 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		31B66C8F27BD9B250048D727 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		31B66C9227BD9B250048D727 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		31B66C9427BD9B260048D727 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		31B66C9727BD9B260048D727 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		31B66C9927BD9B260048D727 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3104D11B27B17EFC005A9C27 /* Frameworks */ = {
+		31B66C8527BD9B250048D727 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,70 +37,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3104D11527B17EFC005A9C27 = {
+		31B66C7F27BD9B250048D727 = {
 			isa = PBXGroup;
 			children = (
-				3104D12027B17EFC005A9C27 /* TexasMeat */,
-				3104D11F27B17EFC005A9C27 /* Products */,
+				31B66C8A27BD9B250048D727 /* TexasMeat */,
+				31B66C8927BD9B250048D727 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		3104D11F27B17EFC005A9C27 /* Products */ = {
+		31B66C8927BD9B250048D727 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3104D11E27B17EFC005A9C27 /* TexasMeat.app */,
+				31B66C8827BD9B250048D727 /* TexasMeat.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3104D12027B17EFC005A9C27 /* TexasMeat */ = {
+		31B66C8A27BD9B250048D727 /* TexasMeat */ = {
 			isa = PBXGroup;
 			children = (
-				3104D12127B17EFC005A9C27 /* AppDelegate.swift */,
-				3104D12327B17EFC005A9C27 /* SceneDelegate.swift */,
-				3160835327BD91EB00616205 /* Model */,
-				3104D13527B17F5E005A9C27 /* Controller */,
-				3104D13627B17F67005A9C27 /* View */,
-				3104D12A27B17EFE005A9C27 /* Assets.xcassets */,
-				3104D12C27B17EFE005A9C27 /* LaunchScreen.storyboard */,
-				3104D12F27B17EFE005A9C27 /* Info.plist */,
+				31B66C8B27BD9B250048D727 /* AppDelegate.swift */,
+				31B66C8D27BD9B250048D727 /* SceneDelegate.swift */,
+				31B66C8F27BD9B250048D727 /* ViewController.swift */,
+				31B66C9127BD9B250048D727 /* Main.storyboard */,
+				31B66C9427BD9B260048D727 /* Assets.xcassets */,
+				31B66C9627BD9B260048D727 /* LaunchScreen.storyboard */,
+				31B66C9927BD9B260048D727 /* Info.plist */,
 			);
 			path = TexasMeat;
-			sourceTree = "<group>";
-		};
-		3104D13527B17F5E005A9C27 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				3104D12527B17EFC005A9C27 /* ViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		3104D13627B17F67005A9C27 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				3104D12727B17EFC005A9C27 /* Main.storyboard */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		3160835327BD91EB00616205 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3104D11D27B17EFC005A9C27 /* TexasMeat */ = {
+		31B66C8727BD9B250048D727 /* TexasMeat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3104D13227B17EFE005A9C27 /* Build configuration list for PBXNativeTarget "TexasMeat" */;
+			buildConfigurationList = 31B66C9C27BD9B260048D727 /* Build configuration list for PBXNativeTarget "TexasMeat" */;
 			buildPhases = (
-				3104D11A27B17EFC005A9C27 /* Sources */,
-				3104D11B27B17EFC005A9C27 /* Frameworks */,
-				3104D11C27B17EFC005A9C27 /* Resources */,
+				31B66C8427BD9B250048D727 /* Sources */,
+				31B66C8527BD9B250048D727 /* Frameworks */,
+				31B66C8627BD9B250048D727 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -108,25 +84,25 @@
 			);
 			name = TexasMeat;
 			productName = TexasMeat;
-			productReference = 3104D11E27B17EFC005A9C27 /* TexasMeat.app */;
+			productReference = 31B66C8827BD9B250048D727 /* TexasMeat.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3104D11627B17EFC005A9C27 /* Project object */ = {
+		31B66C8027BD9B250048D727 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					3104D11D27B17EFC005A9C27 = {
+					31B66C8727BD9B250048D727 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
-			buildConfigurationList = 3104D11927B17EFC005A9C27 /* Build configuration list for PBXProject "TexasMeat" */;
+			buildConfigurationList = 31B66C8327BD9B250048D727 /* Build configuration list for PBXProject "TexasMeat" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -134,55 +110,55 @@
 				en,
 				Base,
 			);
-			mainGroup = 3104D11527B17EFC005A9C27;
-			productRefGroup = 3104D11F27B17EFC005A9C27 /* Products */;
+			mainGroup = 31B66C7F27BD9B250048D727;
+			productRefGroup = 31B66C8927BD9B250048D727 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3104D11D27B17EFC005A9C27 /* TexasMeat */,
+				31B66C8727BD9B250048D727 /* TexasMeat */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3104D11C27B17EFC005A9C27 /* Resources */ = {
+		31B66C8627BD9B250048D727 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3104D12E27B17EFE005A9C27 /* LaunchScreen.storyboard in Resources */,
-				3104D12B27B17EFE005A9C27 /* Assets.xcassets in Resources */,
-				3104D12927B17EFC005A9C27 /* Main.storyboard in Resources */,
+				31B66C9827BD9B260048D727 /* LaunchScreen.storyboard in Resources */,
+				31B66C9527BD9B260048D727 /* Assets.xcassets in Resources */,
+				31B66C9327BD9B250048D727 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3104D11A27B17EFC005A9C27 /* Sources */ = {
+		31B66C8427BD9B250048D727 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3104D12627B17EFC005A9C27 /* ViewController.swift in Sources */,
-				3104D12227B17EFC005A9C27 /* AppDelegate.swift in Sources */,
-				3104D12427B17EFC005A9C27 /* SceneDelegate.swift in Sources */,
+				31B66C9027BD9B250048D727 /* ViewController.swift in Sources */,
+				31B66C8C27BD9B250048D727 /* AppDelegate.swift in Sources */,
+				31B66C8E27BD9B250048D727 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3104D12727B17EFC005A9C27 /* Main.storyboard */ = {
+		31B66C9127BD9B250048D727 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3104D12827B17EFC005A9C27 /* Base */,
+				31B66C9227BD9B250048D727 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		3104D12C27B17EFE005A9C27 /* LaunchScreen.storyboard */ = {
+		31B66C9627BD9B260048D727 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3104D12D27B17EFE005A9C27 /* Base */,
+				31B66C9727BD9B260048D727 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -190,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		3104D13027B17EFE005A9C27 /* Debug */ = {
+		31B66C9A27BD9B260048D727 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -251,7 +227,7 @@
 			};
 			name = Debug;
 		};
-		3104D13127B17EFE005A9C27 /* Release */ = {
+		31B66C9B27BD9B260048D727 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -306,7 +282,7 @@
 			};
 			name = Release;
 		};
-		3104D13327B17EFE005A9C27 /* Debug */ = {
+		31B66C9D27BD9B260048D727 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -330,11 +306,11 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
-		3104D13427B17EFE005A9C27 /* Release */ = {
+		31B66C9E27BD9B260048D727 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -358,32 +334,32 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3104D11927B17EFC005A9C27 /* Build configuration list for PBXProject "TexasMeat" */ = {
+		31B66C8327BD9B250048D727 /* Build configuration list for PBXProject "TexasMeat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3104D13027B17EFE005A9C27 /* Debug */,
-				3104D13127B17EFE005A9C27 /* Release */,
+				31B66C9A27BD9B260048D727 /* Debug */,
+				31B66C9B27BD9B260048D727 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3104D13227B17EFE005A9C27 /* Build configuration list for PBXNativeTarget "TexasMeat" */ = {
+		31B66C9C27BD9B260048D727 /* Build configuration list for PBXNativeTarget "TexasMeat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3104D13327B17EFE005A9C27 /* Debug */,
-				3104D13427B17EFE005A9C27 /* Release */,
+				31B66C9D27BD9B260048D727 /* Debug */,
+				31B66C9E27BD9B260048D727 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 3104D11627B17EFC005A9C27 /* Project object */;
+	rootObject = 31B66C8027BD9B250048D727 /* Project object */;
 }
