@@ -21,3 +21,5 @@ Main goals though that I'd target are as the following-
 
 ## The end of the trail
 I'm not sure how high my expectations are going to be for such a project, But I'd love to see how far I can go with having something that would be fun and enjoyable plus have something as a great carrer starting point with. I wish myself the best luck and through the deepest endavours.
+
+# [Credits](https://github.com/Flance-s/TexasMeat/blob/main/Credits.md)
