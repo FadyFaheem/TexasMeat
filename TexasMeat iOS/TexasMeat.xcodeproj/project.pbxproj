@@ -58,6 +58,7 @@
 			children = (
 				3104D12127B17EFC005A9C27 /* AppDelegate.swift */,
 				3104D12327B17EFC005A9C27 /* SceneDelegate.swift */,
+				3160835327BD91EB00616205 /* Model */,
 				3104D13527B17F5E005A9C27 /* Controller */,
 				3104D13627B17F67005A9C27 /* View */,
 				3104D12A27B17EFE005A9C27 /* Assets.xcassets */,
@@ -81,6 +82,13 @@
 				3104D12727B17EFC005A9C27 /* Main.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		3160835327BD91EB00616205 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
