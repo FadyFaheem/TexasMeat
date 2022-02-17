@@ -58,13 +58,37 @@
 			children = (
 				31B66C8B27BD9B250048D727 /* AppDelegate.swift */,
 				31B66C8D27BD9B250048D727 /* SceneDelegate.swift */,
-				31B66C8F27BD9B250048D727 /* ViewController.swift */,
-				31B66C9127BD9B250048D727 /* Main.storyboard */,
+				31B66CA027BE0EF60048D727 /* Model */,
+				31B66CA227BE0F090048D727 /* Controller */,
+				31B66CA127BE0F050048D727 /* View */,
 				31B66C9427BD9B260048D727 /* Assets.xcassets */,
 				31B66C9627BD9B260048D727 /* LaunchScreen.storyboard */,
 				31B66C9927BD9B260048D727 /* Info.plist */,
 			);
 			path = TexasMeat;
+			sourceTree = "<group>";
+		};
+		31B66CA027BE0EF60048D727 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		31B66CA127BE0F050048D727 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				31B66C9127BD9B250048D727 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		31B66CA227BE0F090048D727 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				31B66C8F27BD9B250048D727 /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
