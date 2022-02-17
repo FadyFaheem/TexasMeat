@@ -8,22 +8,28 @@ import UIKit
 import CoreML
 import Vision
 import YPImagePicker
+import GoogleMobileAds
 
 class ImageDetectViewController: UIViewController, UINavigationControllerDelegate {
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var textField: UINavigationItem!
     var selectedItems = [YPMediaItem]()
-    
+    @IBOutlet weak var adBanner: GADBannerView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.scrollEdgeAppearance = navigationController?.navigationBar.standardAppearance
         textField.title = "#/10"
+        
+        adBanner.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        adBanner.load(GADRequest())
+        adBanner.rootViewController = self
     }
-
+    
     @IBAction func cameraTapped(_ sender: UIBarButtonItem) {
         showPicker()
+        adBanner.load(GADRequest())
     }
     
     func result(image: CIImage){
@@ -61,7 +67,6 @@ class ImageDetectViewController: UIViewController, UINavigationControllerDelegat
         
         picker.didFinishPicking { items, cancelled in
             if cancelled {
-                print("Picker was canceled")
                 picker.dismiss(animated: true, completion: nil)
                 return
             }
@@ -82,6 +87,7 @@ class ImageDetectViewController: UIViewController, UINavigationControllerDelegat
             
             
             picker.dismiss(animated: true, completion: nil)
+            
         }
         
         present(picker, animated: true, completion: nil)
