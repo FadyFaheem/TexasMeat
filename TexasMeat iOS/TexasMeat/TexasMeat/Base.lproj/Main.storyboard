@@ -33,8 +33,15 @@
                     <navigationItem key="navigationItem" title="#/10" id="v6T-Mz-6bv">
                         <barButtonItem key="rightBarButtonItem" systemItem="camera" id="Lzq-jh-uNe">
                             <color key="tintColor" name="CameraColor"/>
+                            <connections>
+                                <action selector="cameraTapped:" destination="BYZ-38-t0r" id="2Cn-lX-NBd"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="gPS-U3-Nci" id="bjU-ww-vee"/>
+                        <outlet property="textField" destination="v6T-Mz-6bv" id="LlF-TB-XrU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

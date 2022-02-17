@@ -11,10 +11,20 @@ import Vision
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var textField: UINavigationItem!
+    let imagePicker = UIImagePickerController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.scrollEdgeAppearance = navigationController?.navigationBar.standardAppearance
+        textField.title = "#/10"
     }
+    
+    @IBAction func cameraTapped(_ sender: UIBarButtonItem) {
+        
+    }
+    
 
 
 }
