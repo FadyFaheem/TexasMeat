@@ -14,9 +14,11 @@
 		31B66C9527BD9B260048D727 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31B66C9427BD9B260048D727 /* Assets.xcassets */; };
 		31B66C9827BD9B260048D727 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31B66C9627BD9B260048D727 /* LaunchScreen.storyboard */; };
 		31B66CA427BE119B0048D727 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 31B66CA327BE119B0048D727 /* Inceptionv3.mlmodel */; };
+		3BCE636DD971A8CE453EE437 /* Pods_TexasMeat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC37C21308FA19A0C95E6402 /* Pods_TexasMeat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18824C3CBCADAB5412EA7ED0 /* Pods-TexasMeat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TexasMeat.debug.xcconfig"; path = "Target Support Files/Pods-TexasMeat/Pods-TexasMeat.debug.xcconfig"; sourceTree = "<group>"; };
 		31B66C8827BD9B250048D727 /* TexasMeat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TexasMeat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31B66C8B27BD9B250048D727 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31B66C8D27BD9B250048D727 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		31B66C9727BD9B260048D727 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31B66C9927BD9B260048D727 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31B66CA327BE119B0048D727 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		BC37C21308FA19A0C95E6402 /* Pods_TexasMeat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TexasMeat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB8E4E832D5F9993791E98FB /* Pods-TexasMeat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TexasMeat.release.xcconfig"; path = "Target Support Files/Pods-TexasMeat/Pods-TexasMeat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BCE636DD971A8CE453EE437 /* Pods_TexasMeat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C0ED7B672A921CF70658775 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				18824C3CBCADAB5412EA7ED0 /* Pods-TexasMeat.debug.xcconfig */,
+				DB8E4E832D5F9993791E98FB /* Pods-TexasMeat.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		31B66C7F27BD9B250048D727 = {
 			isa = PBXGroup;
 			children = (
 				31B66C8A27BD9B250048D727 /* TexasMeat */,
 				31B66C8927BD9B250048D727 /* Products */,
+				1C0ED7B672A921CF70658775 /* Pods */,
+				C3B75E0EFAF6E9654A02556E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +111,14 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
+		C3B75E0EFAF6E9654A02556E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC37C21308FA19A0C95E6402 /* Pods_TexasMeat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -101,9 +126,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 31B66C9C27BD9B260048D727 /* Build configuration list for PBXNativeTarget "TexasMeat" */;
 			buildPhases = (
+				2C52DC8E547CC9665B0F62D0 /* [CP] Check Pods Manifest.lock */,
 				31B66C8427BD9B250048D727 /* Sources */,
 				31B66C8527BD9B250048D727 /* Frameworks */,
 				31B66C8627BD9B250048D727 /* Resources */,
+				530ABDA0AB881851176C0880 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -159,6 +186,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C52DC8E547CC9665B0F62D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TexasMeat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		530ABDA0AB881851176C0880 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TexasMeat/Pods-TexasMeat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TexasMeat/Pods-TexasMeat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TexasMeat/Pods-TexasMeat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		31B66C8427BD9B250048D727 /* Sources */ = {
@@ -312,6 +381,7 @@
 		};
 		31B66C9D27BD9B260048D727 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18824C3CBCADAB5412EA7ED0 /* Pods-TexasMeat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -342,6 +412,7 @@
 		};
 		31B66C9E27BD9B260048D727 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB8E4E832D5F9993791E98FB /* Pods-TexasMeat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -8,66 +8,56 @@
 import UIKit
 import CoreML
 import Vision
+import YPImagePicker
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UINavigationControllerDelegate {
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var textField: UINavigationItem!
-    let imagePicker = UIImagePickerController()
-    let config = MLModelConfiguration()
+    var selectedItems = [YPMediaItem]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.scrollEdgeAppearance = navigationController?.navigationBar.standardAppearance
         textField.title = "#/10"
-        imagePicker.delegate = self
-        imagePicker.sourceType = .camera // .photoLibrary || .camera
-        imagePicker.allowsEditing = true
         
     }
     
     @IBAction func cameraTapped(_ sender: UIBarButtonItem) {
-        present(imagePicker, animated: true, completion: nil)
+        showPicker()
     }
     
-    func result(image: CIImage) {
-        guard let inceptionV3 = try? VNCoreMLModel(for: Inceptionv3(configuration: config).model) else {
-            fatalError("Failed loading inceptionV3 Model")
-        }
+    func showPicker() {
+        var config = YPImagePickerConfiguration().self
+        config.showsPhotoFilters = false
+        let picker = YPImagePicker(configuration: config)
+        picker.imagePickerDelegate = self
         
-        let request  = VNCoreMLRequest(model: inceptionV3) { request, error in
-            guard let results = request.results as? [VNClassificationObservation] else {
-                fatalError("Failed to process Image through Model")
+        picker.didFinishPicking { items, cancelled in
+            if cancelled {
+                print("Picker was canceled")
+                picker.dismiss(animated: true, completion: nil)
+                return
             }
             
-            if let outputResults = results.first {
-                self.textField.title = outputResults.identifier.description
-            }
+            self.selectedItems = items
+            self.imageView.image = items.singlePhoto?.image
+            picker.dismiss(animated: true, completion: nil)
         }
         
-        let handler = VNImageRequestHandler(ciImage: image)
-        do {
-            try handler.perform([request])
-        } catch {
-            print(error.localizedDescription)
-        }
+        present(picker, animated: true, completion: nil)
     }
-    
     
 }
 
-extension ViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        if let userImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
-            imageView.image = userImage
-            
-            guard let ciImage = CIImage(image: userImage) else {
-                fatalError("Failed to convert UIImage to CIImage")
-            }
-            
-            result(image: ciImage)
-            
-        }
-        imagePicker.dismiss(animated: true)
+extension ViewController : YPImagePickerDelegate {
+    
+    func shouldAddToSelection(indexPath: IndexPath, numSelections: Int) -> Bool {
+        return true // indexPath.row != 2
     }
+    
+    func imagePickerHasNoItemsInLibrary(_ picker: YPImagePicker) {
+        // Can not run
+    }
+    
 }
