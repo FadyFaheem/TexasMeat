@@ -27,9 +27,36 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
         showPicker()
     }
     
+    func result(image: CIImage){
+        let config = MLModelConfiguration()
+        guard let incepetionV3 = try? VNCoreMLModel(for: Inceptionv3(configuration: config).model) else {
+            fatalError("Loading Core ML Model Failed.")
+        }
+        
+        let request = VNCoreMLRequest(model: incepetionV3) { request, error in
+            guard let results = request.results as? [VNClassificationObservation] else {
+                fatalError("Model failed to process image.")
+            }
+            
+            if let firstResult = results.first {
+                self.textField.title = firstResult.identifier
+            }
+        }
+        
+        let handler = VNImageRequestHandler(ciImage: image)
+        do {
+            try handler.perform([request])
+        } catch {
+            print(error.localizedDescription)
+        }
+    }
+    
     func showPicker() {
         var config = YPImagePickerConfiguration().self
         config.showsPhotoFilters = false
+        config.usesFrontCamera = false
+        config.library.maxNumberOfItems = 1
+        config.library.minNumberOfItems = 1
         let picker = YPImagePicker(configuration: config)
         picker.imagePickerDelegate = self
         
@@ -41,7 +68,20 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
             }
             
             self.selectedItems = items
-            self.imageView.image = items.singlePhoto?.image
+            
+            if let image = items.singlePhoto?.image {
+                self.imageView.image = image
+                
+                guard let ciImage = CIImage(image: image) else {
+                    fatalError("Error converting UIImage to CIImage")
+                }
+                
+                self.result(image: ciImage)
+                
+            }
+            
+            
+            
             picker.dismiss(animated: true, completion: nil)
         }
         
