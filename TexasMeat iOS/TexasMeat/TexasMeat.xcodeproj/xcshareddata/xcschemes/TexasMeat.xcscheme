@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "492A3F539D36426FFCED62F4F58F688B"
-               BuildableName = "PryntTrimmerView.framework"
-               BlueprintName = "PryntTrimmerView"
-               ReferencedContainer = "container:Pods.xcodeproj">
+               BlueprintIdentifier = "31B66C8727BD9B250048D727"
+               BuildableName = "TexasMeat.app"
+               BlueprintName = "TexasMeat"
+               ReferencedContainer = "container:TexasMeat.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -40,6 +40,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "31B66C8727BD9B250048D727"
+            BuildableName = "TexasMeat.app"
+            BlueprintName = "TexasMeat"
+            ReferencedContainer = "container:TexasMeat.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -47,6 +57,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "31B66C8727BD9B250048D727"
+            BuildableName = "TexasMeat.app"
+            BlueprintName = "TexasMeat"
+            ReferencedContainer = "container:TexasMeat.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

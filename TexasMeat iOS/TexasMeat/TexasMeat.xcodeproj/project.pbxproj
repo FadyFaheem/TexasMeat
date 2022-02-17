@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		31B66C8C27BD9B250048D727 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B66C8B27BD9B250048D727 /* AppDelegate.swift */; };
 		31B66C8E27BD9B250048D727 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B66C8D27BD9B250048D727 /* SceneDelegate.swift */; };
-		31B66C9027BD9B250048D727 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B66C8F27BD9B250048D727 /* ViewController.swift */; };
+		31B66C9027BD9B250048D727 /* ImageDetectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B66C8F27BD9B250048D727 /* ImageDetectViewController.swift */; };
 		31B66C9327BD9B250048D727 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31B66C9127BD9B250048D727 /* Main.storyboard */; };
 		31B66C9527BD9B260048D727 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31B66C9427BD9B260048D727 /* Assets.xcassets */; };
 		31B66C9827BD9B260048D727 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31B66C9627BD9B260048D727 /* LaunchScreen.storyboard */; };
@@ -22,7 +22,7 @@
 		31B66C8827BD9B250048D727 /* TexasMeat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TexasMeat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31B66C8B27BD9B250048D727 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31B66C8D27BD9B250048D727 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		31B66C8F27BD9B250048D727 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		31B66C8F27BD9B250048D727 /* ImageDetectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetectViewController.swift; sourceTree = "<group>"; };
 		31B66C9227BD9B250048D727 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		31B66C9427BD9B260048D727 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31B66C9727BD9B260048D727 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,7 +50,6 @@
 				18824C3CBCADAB5412EA7ED0 /* Pods-TexasMeat.debug.xcconfig */,
 				DB8E4E832D5F9993791E98FB /* Pods-TexasMeat.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -106,7 +105,7 @@
 		31B66CA227BE0F090048D727 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				31B66C8F27BD9B250048D727 /* ViewController.swift */,
+				31B66C8F27BD9B250048D727 /* ImageDetectViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -234,7 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31B66C9027BD9B250048D727 /* ViewController.swift in Sources */,
+				31B66C9027BD9B250048D727 /* ImageDetectViewController.swift in Sources */,
 				31B66CA427BE119B0048D727 /* Inceptionv3.mlmodel in Sources */,
 				31B66C8C27BD9B250048D727 /* AppDelegate.swift in Sources */,
 				31B66C8E27BD9B250048D727 /* SceneDelegate.swift in Sources */,
