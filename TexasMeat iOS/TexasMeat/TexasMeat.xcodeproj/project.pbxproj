@@ -13,6 +13,7 @@
 		31B66C9327BD9B250048D727 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31B66C9127BD9B250048D727 /* Main.storyboard */; };
 		31B66C9527BD9B260048D727 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31B66C9427BD9B260048D727 /* Assets.xcassets */; };
 		31B66C9827BD9B260048D727 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31B66C9627BD9B260048D727 /* LaunchScreen.storyboard */; };
+		31B66CA427BE119B0048D727 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 31B66CA327BE119B0048D727 /* Inceptionv3.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		31B66C9427BD9B260048D727 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31B66C9727BD9B260048D727 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31B66C9927BD9B260048D727 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31B66CA327BE119B0048D727 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		31B66CA027BE0EF60048D727 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				31B66CA327BE119B0048D727 /* Inceptionv3.mlmodel */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31B66C9027BD9B250048D727 /* ViewController.swift in Sources */,
+				31B66CA427BE119B0048D727 /* Inceptionv3.mlmodel in Sources */,
 				31B66C8C27BD9B250048D727 /* AppDelegate.swift in Sources */,
 				31B66C8E27BD9B250048D727 /* SceneDelegate.swift in Sources */,
 			);
@@ -316,11 +320,13 @@
 				DEVELOPMENT_TEAM = FAQL86F52N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TexasMeat/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Used for Processing Images through machine learning";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Using saved photos to process through machine learning";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -344,11 +350,13 @@
 				DEVELOPMENT_TEAM = FAQL86F52N;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TexasMeat/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Used for Processing Images through machine learning";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Using saved photos to process through machine learning";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
