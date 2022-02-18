@@ -11,7 +11,11 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var basicCells : [BasicCell] = [BasicCell(textLabel: "Hello")]
+    var basicCells : [BasicCell] = [BasicCell(image: #imageLiteral(resourceName: "TexasMeatOnly"), textLabel: "Oven Roasted"),
+                                    BasicCell(image: #imageLiteral(resourceName: "TexasMeatOnly"), textLabel: "Grilled"),
+                                    BasicCell(image: #imageLiteral(resourceName: "TexasMeatOnly"), textLabel: "Pan Fried"),
+                                    BasicCell(image: #imageLiteral(resourceName: "TexasMeatOnly"), textLabel: "Seared"),
+                                    BasicCell(image: #imageLiteral(resourceName: "TexasMeatOnly"), textLabel: "Braising")]
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
@@ -32,7 +36,8 @@ extension HomeViewController : UITableViewDataSource {
         let message = basicCells[indexPath.row]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: Constants.reusableBasicCell, for: indexPath) as! BasicTableViewCell
-        cell.textLabel?.text = message.textLabel
+        cell.basicImageView.image = message.image
+        cell.titleLabel.text = message.textLabel
         
         return cell
     }

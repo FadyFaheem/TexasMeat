@@ -9,5 +9,6 @@ import Foundation
 import UIKit
 
 struct BasicCell {
+    let image : UIImage
     let textLabel : String
 }

@@ -9,7 +9,10 @@ import UIKit
 
 class BasicTableViewCell: UITableViewCell {
 
-    @IBOutlet var textFieldLabel: UILabel!
+
+    @IBOutlet var basicImageView: UIImageView!
+    @IBOutlet var titleLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
