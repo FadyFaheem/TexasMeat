@@ -58,6 +58,9 @@
                     <navigationItem key="navigationItem" title="Home" id="t4p-0k-s2Y">
                         <barButtonItem key="backBarButtonItem" title="Back" id="hQu-PR-ngM"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="zLf-yZ-vpU" id="mC0-aW-Cm7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n7o-2b-YEI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
