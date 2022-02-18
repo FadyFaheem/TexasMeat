@@ -22,7 +22,7 @@ class ImageDetectViewController: UIViewController, UINavigationControllerDelegat
         navigationItem.scrollEdgeAppearance = navigationController?.navigationBar.standardAppearance
         textField.title = "#/10"
         
-        adBanner.adUnitID = "ca-app-pub-3940256099942544/2934735716"
+        adBanner.adUnitID = "ca-app-pub-2251456888429532/3771077674"
         adBanner.load(GADRequest())
         adBanner.rootViewController = self
     }
