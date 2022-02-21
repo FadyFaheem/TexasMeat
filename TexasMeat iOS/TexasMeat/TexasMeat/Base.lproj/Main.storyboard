@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vgh-8F-2lm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4c1-Rx-5cl">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -290,7 +290,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FK3-vs-Xdr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2794.202898550725" y="219.64285714285714"/>
+            <point key="canvasLocation" x="2794" y="261"/>
         </scene>
         <!--Test Screen-->
         <scene sceneID="tne-QT-ifu">
@@ -353,10 +353,44 @@
             </objects>
             <point key="canvasLocation" x="-893" y="-591"/>
         </scene>
+        <!--Start View Controller-->
+        <scene sceneID="z32-ya-iVA">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="4c1-Rx-5cl" customClass="StartViewController" customModule="TexasMeat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VYx-NM-vst">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NwJ-TX-s4b">
+                                <rect key="frame" x="136" y="409" width="142.5" height="78.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Start">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="55"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startButton:" destination="4c1-Rx-5cl" eventType="touchUpInside" id="hwA-Ur-Zsf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tsS-rM-GoB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NwJ-TX-s4b" firstAttribute="centerY" secondItem="VYx-NM-vst" secondAttribute="centerY" id="gg8-mn-Kd8"/>
+                            <constraint firstItem="NwJ-TX-s4b" firstAttribute="centerX" secondItem="VYx-NM-vst" secondAttribute="centerX" id="sY4-aH-dJh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="Vgh-8F-2lm" kind="presentation" identifier="StartToHome" modalPresentationStyle="fullScreen" id="RDP-0Z-rGh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F0K-1L-JP2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2082.608695652174" y="-2087.9464285714284"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ZPK-1S-vlN">
             <objects>
-                <tabBarController id="Vgh-8F-2lm" sceneMemberID="viewController">
+                <tabBarController modalPresentationStyle="fullScreen" id="Vgh-8F-2lm" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="vAZ-AS-pm0"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kOq-dS-RpF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>

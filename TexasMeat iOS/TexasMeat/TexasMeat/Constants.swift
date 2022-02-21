@@ -10,4 +10,11 @@ import Foundation
 struct Constants {
     static let reusableBasicCell = "ReusableBasicCell"
     static let resuableBasicCellNib = "BasicTableViewCell"
+    static let tutorialPlayableKey = "playTutorial"
+    static let tutorialCell = "tutCellReusable"
+    
+    struct segues {
+        static let segueStartHome = "StartToHome"
+        static let segueStartTut = "StartToTutorial"
+    }
 }
