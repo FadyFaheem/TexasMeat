@@ -71,66 +71,128 @@
             <objects>
                 <viewController id="bZh-wB-gCV" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SGt-Ki-x1a">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1075"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6R0-Rx-Rd6">
-                                <rect key="frame" x="0.0" y="88" width="414" height="1029"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="904"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PZf-tl-yb6" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1075"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How does the grading system work?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdb-Wy-X9B">
-                                                <rect key="frame" x="67.5" y="25" width="279" height="19.5"/>
+                                                <rect key="frame" x="67.5" y="30" width="279" height="19.5"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The grading system is put on a one to ten scale, with ten being the best and one the lowest." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZd-hH-BYY">
-                                                <rect key="frame" x="55.5" y="54.5" width="303.5" height="56"/>
+                                                <rect key="frame" x="55.5" y="59.5" width="303.5" height="56"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It's also graded on the USDA Standard. That scale as follows:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRI-og-cwC">
-                                                <rect key="frame" x="54.5" y="130.5" width="305" height="40"/>
+                                                <rect key="frame" x="54.5" y="135.5" width="305" height="40"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USDA Prime: 10-8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Sa-VK-3y2">
-                                                <rect key="frame" x="134.5" y="190.5" width="145" height="20"/>
+                                                <rect key="frame" x="134.5" y="195.5" width="145" height="20"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USDA Choice: 7-5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yxB-Ei-Ol6">
-                                                <rect key="frame" x="134.5" y="220.5" width="145" height="20"/>
+                                                <rect key="frame" x="134.5" y="225.5" width="145" height="20"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USDA Select: 4-3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zxt-zo-ElW">
-                                                <rect key="frame" x="137.5" y="250.5" width="139" height="20"/>
+                                                <rect key="frame" x="137.5" y="255.5" width="139" height="20"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USDA Standard: 2-1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qG0-FH-kJl">
-                                                <rect key="frame" x="126" y="280.5" width="162" height="20"/>
+                                                <rect key="frame" x="126" y="285.5" width="162" height="20"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can also change from the 1 to 10 scale to the USDA Standard Scale through the settings." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QKD-yv-SvF">
-                                                <rect key="frame" x="63" y="325.5" width="288" height="59.5"/>
+                                                <rect key="frame" x="63" y="330.5" width="288" height="59.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q2U-Dy-LY3">
+                                                <rect key="frame" x="50" y="450.5" width="314" height="79.5"/>
+                                                <string key="text">As of right now, the app will support 5 different cooking methods, and different characteristics, such as marbilization and reduced fat.</string>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33m-JJ-aeN">
+                                                <rect key="frame" x="50" y="770.5" width="314" height="119"/>
+                                                <string key="text">I think what inspired this app was giving a simpler option for the consumer to be able to pick the best meat in a shorter amount of time. Rather than comparing one to one, over and over, you only need to do it once.</string>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. New York Strip" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0U-N9-fCJ">
+                                                <rect key="frame" x="141" y="550" width="132" height="20"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. Chuck Roast" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2P9-dD-c8q">
+                                                <rect key="frame" x="148.5" y="585" width="117.5" height="20"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. Flat Iron Steak" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4l6-Oc-kJx">
+                                                <rect key="frame" x="142.5" y="620" width="129" height="20"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4. Tenderloin" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRb-4f-wb0">
+                                                <rect key="frame" x="158.5" y="655" width="97" height="20"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5. Brisket" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVe-Uf-zNR">
+                                                <rect key="frame" x="171" y="690" width="72" height="20"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What will you be able to scale?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yDr-TG-m5s">
-                                                <rect key="frame" x="82" y="410" width="250" height="20.5"/>
+                                                <rect key="frame" x="82" y="420" width="250" height="20.5"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What Insipired this app?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yep-iv-JhG">
+                                                <rect key="frame" x="109.5" y="740" width="195.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Extra Info" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7bs-zt-Mnw">
+                                                <rect key="frame" x="168" y="919.5" width="78.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Any app purchase will give you the ability to request meats via the settings menu." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jso-D2-RHo">
+                                                <rect key="frame" x="50" y="950" width="314" height="40"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -141,38 +203,64 @@
                                             <constraint firstItem="yDr-TG-m5s" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PZf-tl-yb6" secondAttribute="leading" constant="50" id="19N-tf-tCa"/>
                                             <constraint firstItem="QKD-yv-SvF" firstAttribute="centerX" secondItem="PZf-tl-yb6" secondAttribute="centerX" id="1Fx-Tf-ruj"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yxB-Ei-Ol6" secondAttribute="trailing" constant="50" id="1av-Lw-rja"/>
+                                            <constraint firstItem="Jso-D2-RHo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PZf-tl-yb6" secondAttribute="leading" constant="50" id="2U1-5q-tRP"/>
                                             <constraint firstItem="QKD-yv-SvF" firstAttribute="centerX" secondItem="PZf-tl-yb6" secondAttribute="centerX" id="3kf-gi-lhr"/>
-                                            <constraint firstItem="jdb-Wy-X9B" firstAttribute="top" secondItem="PZf-tl-yb6" secondAttribute="top" constant="25" id="8El-mN-5Yo"/>
+                                            <constraint firstItem="sVe-Uf-zNR" firstAttribute="centerX" secondItem="PZf-tl-yb6" secondAttribute="centerX" id="7qu-bm-eNy"/>
+                                            <constraint firstItem="jdb-Wy-X9B" firstAttribute="top" secondItem="PZf-tl-yb6" secondAttribute="top" constant="30" id="8El-mN-5Yo"/>
                                             <constraint firstItem="yxB-Ei-Ol6" firstAttribute="centerX" secondItem="PZf-tl-yb6" secondAttribute="centerX" id="8G6-hs-nFe"/>
                                             <constraint firstItem="TRI-og-cwC" firstAttribute="centerX" secondItem="PZf-tl-yb6" secondAttribute="centerX" id="DPf-mS-pMv"/>
+                                            <constraint firstItem="k0U-N9-fCJ" firstAttribute="centerX" secondItem="PZf-tl-yb6" secondAttribute="centerX" id="DUR-ia-RFA"/>
+                                            <constraint firstItem="Jso-D2-RHo" firstAttribute="top" secondItem="7bs-zt-Mnw" secondAttribute="bottom" constant="10" id="EW1-A5-GhU"/>
+                                            <constraint firstItem="yep-iv-JhG" firstAttribute="centerX" secondItem="PZf-tl-yb6" secondAttribute="centerX" id="GP7-2j-UDP"/>
+                                            <constraint firstItem="Q2U-Dy-LY3" firstAttribute="centerX" secondItem="PZf-tl-yb6" secondAttribute="centerX" id="GQ6-c8-aEW"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eZd-hH-BYY" secondAttribute="trailing" constant="50" id="GvU-bq-710"/>
+                                            <constraint firstItem="33m-JJ-aeN" firstAttribute="top" secondItem="yep-iv-JhG" secondAttribute="bottom" constant="10" id="IFx-PY-0TB"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yDr-TG-m5s" secondAttribute="trailing" constant="50" id="IG4-hJ-m8F"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Jso-D2-RHo" secondAttribute="trailing" constant="50" id="ISi-Bd-DPd"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="QKD-yv-SvF" secondAttribute="trailing" constant="50" id="JtC-3H-vh8"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Q2U-Dy-LY3" secondAttribute="trailing" constant="50" id="KPg-jz-HWM"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6Sa-VK-3y2" secondAttribute="trailing" constant="50" id="OHr-R7-m9T"/>
+                                            <constraint firstItem="2P9-dD-c8q" firstAttribute="centerX" secondItem="PZf-tl-yb6" secondAttribute="centerX" id="PdL-Vh-vXf"/>
                                             <constraint firstItem="yxB-Ei-Ol6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PZf-tl-yb6" secondAttribute="leading" constant="50" id="Q1P-7K-Js0"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TRI-og-cwC" secondAttribute="trailing" constant="50" id="Q2a-zv-4ae"/>
                                             <constraint firstItem="TRI-og-cwC" firstAttribute="top" secondItem="eZd-hH-BYY" secondAttribute="bottom" constant="20" id="R08-xD-uQn"/>
+                                            <constraint firstItem="Jso-D2-RHo" firstAttribute="centerX" secondItem="PZf-tl-yb6" secondAttribute="centerX" id="R4u-co-fYx"/>
+                                            <constraint firstItem="k0U-N9-fCJ" firstAttribute="top" secondItem="Q2U-Dy-LY3" secondAttribute="bottom" constant="20" id="Uik-sw-iJU"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="33m-JJ-aeN" secondAttribute="trailing" constant="50" id="VaZ-6H-Hg3"/>
                                             <constraint firstItem="Zxt-zo-ElW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PZf-tl-yb6" secondAttribute="leading" constant="50" id="Vov-Pm-nX7"/>
+                                            <constraint firstItem="7bs-zt-Mnw" firstAttribute="top" secondItem="33m-JJ-aeN" secondAttribute="bottom" constant="30" id="XjG-kc-qaj"/>
                                             <constraint firstItem="6Sa-VK-3y2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PZf-tl-yb6" secondAttribute="leading" constant="50" id="XjS-16-wbU"/>
                                             <constraint firstItem="Zxt-zo-ElW" firstAttribute="top" secondItem="yxB-Ei-Ol6" secondAttribute="bottom" constant="10" id="YxQ-S2-73r"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Zxt-zo-ElW" secondAttribute="trailing" constant="50" id="Z5p-RH-szo"/>
                                             <constraint firstItem="yDr-TG-m5s" firstAttribute="centerX" secondItem="PZf-tl-yb6" secondAttribute="centerX" id="ZPU-Uz-4GN"/>
+                                            <constraint firstItem="sVe-Uf-zNR" firstAttribute="top" secondItem="DRb-4f-wb0" secondAttribute="bottom" constant="15" id="aJw-iM-DY5"/>
                                             <constraint firstItem="eZd-hH-BYY" firstAttribute="top" secondItem="jdb-Wy-X9B" secondAttribute="bottom" constant="10" id="ayb-uF-LqV"/>
                                             <constraint firstItem="QKD-yv-SvF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PZf-tl-yb6" secondAttribute="leading" constant="50" id="c5V-uK-tec"/>
                                             <constraint firstItem="eZd-hH-BYY" firstAttribute="centerX" secondItem="PZf-tl-yb6" secondAttribute="centerX" id="cIf-4R-rTK"/>
                                             <constraint firstItem="yxB-Ei-Ol6" firstAttribute="top" secondItem="6Sa-VK-3y2" secondAttribute="bottom" constant="10" id="cL2-O6-drf"/>
+                                            <constraint firstItem="DRb-4f-wb0" firstAttribute="centerX" secondItem="PZf-tl-yb6" secondAttribute="centerX" id="clf-oN-nFX"/>
+                                            <constraint firstItem="2P9-dD-c8q" firstAttribute="top" secondItem="k0U-N9-fCJ" secondAttribute="bottom" constant="15" id="dgL-sa-MNP"/>
+                                            <constraint firstItem="4l6-Oc-kJx" firstAttribute="centerX" secondItem="PZf-tl-yb6" secondAttribute="centerX" id="eDb-iy-XAK"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="qG0-FH-kJl" secondAttribute="trailing" constant="50" id="fFd-vT-UeJ"/>
+                                            <constraint firstItem="33m-JJ-aeN" firstAttribute="centerX" secondItem="PZf-tl-yb6" secondAttribute="centerX" id="go8-bI-h0O"/>
+                                            <constraint firstItem="Q2U-Dy-LY3" firstAttribute="top" secondItem="yDr-TG-m5s" secondAttribute="bottom" constant="10" id="iqa-zp-lBl"/>
+                                            <constraint firstItem="7bs-zt-Mnw" firstAttribute="centerX" secondItem="PZf-tl-yb6" secondAttribute="centerX" id="jWi-yF-dNk"/>
                                             <constraint firstItem="jdb-Wy-X9B" firstAttribute="centerX" secondItem="PZf-tl-yb6" secondAttribute="centerX" id="kjH-1q-EJg"/>
+                                            <constraint firstItem="Q2U-Dy-LY3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PZf-tl-yb6" secondAttribute="leading" constant="50" id="l3d-4t-gLD"/>
                                             <constraint firstItem="Zxt-zo-ElW" firstAttribute="centerX" secondItem="PZf-tl-yb6" secondAttribute="centerX" id="lVb-ki-4xa"/>
                                             <constraint firstItem="qG0-FH-kJl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PZf-tl-yb6" secondAttribute="leading" constant="50" id="mJd-hE-SYy"/>
-                                            <constraint firstAttribute="height" constant="1200" id="pKC-eq-9JP"/>
+                                            <constraint firstItem="DRb-4f-wb0" firstAttribute="top" secondItem="4l6-Oc-kJx" secondAttribute="bottom" constant="15" id="oU5-le-jBC"/>
+                                            <constraint firstAttribute="height" constant="1075" id="pKC-eq-9JP"/>
                                             <constraint firstItem="6Sa-VK-3y2" firstAttribute="top" secondItem="TRI-og-cwC" secondAttribute="bottom" constant="20" id="rV5-hC-jCB"/>
                                             <constraint firstItem="eZd-hH-BYY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PZf-tl-yb6" secondAttribute="leading" constant="50" id="rXq-87-XGd"/>
                                             <constraint firstItem="QKD-yv-SvF" firstAttribute="top" secondItem="qG0-FH-kJl" secondAttribute="bottom" constant="25" id="t2q-RV-OiU"/>
                                             <constraint firstItem="qG0-FH-kJl" firstAttribute="top" secondItem="Zxt-zo-ElW" secondAttribute="bottom" constant="10" id="ww4-PK-sQE"/>
+                                            <constraint firstItem="33m-JJ-aeN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PZf-tl-yb6" secondAttribute="leading" constant="50" id="x7Z-WZ-a1V"/>
                                             <constraint firstItem="TRI-og-cwC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PZf-tl-yb6" secondAttribute="leading" constant="50" id="xys-b0-j4M"/>
-                                            <constraint firstItem="yDr-TG-m5s" firstAttribute="top" secondItem="QKD-yv-SvF" secondAttribute="bottom" constant="25" id="yWd-uz-lPM"/>
+                                            <constraint firstItem="yDr-TG-m5s" firstAttribute="top" secondItem="QKD-yv-SvF" secondAttribute="bottom" constant="30" id="yWd-uz-lPM"/>
+                                            <constraint firstItem="yep-iv-JhG" firstAttribute="top" secondItem="sVe-Uf-zNR" secondAttribute="bottom" constant="30" id="yjW-zc-vRX"/>
                                             <constraint firstItem="6Sa-VK-3y2" firstAttribute="centerX" secondItem="PZf-tl-yb6" secondAttribute="centerX" id="zHm-VN-10F"/>
+                                            <constraint firstItem="4l6-Oc-kJx" firstAttribute="top" secondItem="2P9-dD-c8q" secondAttribute="bottom" constant="15" id="zNY-qg-6Zk"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -195,7 +283,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Info" id="qTw-3N-h48"/>
-                    <size key="freeformSize" width="414" height="1200"/>
+                    <size key="freeformSize" width="414" height="1075"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FK3-vs-Xdr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -285,7 +373,6 @@
         <!--Navigation Controller-->
         <scene sceneID="6Df-u7-C7d">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ioS-Fv-l7U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1Jh-Cy-lgz" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ant-sQ-Ts8">
@@ -297,6 +384,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="w6R-kg-IIg"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ioS-Fv-l7U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1586" y="-591"/>
         </scene>
