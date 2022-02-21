@@ -13,7 +13,7 @@
         <!--Home-->
         <scene sceneID="yDi-bY-AlV">
             <objects>
-                <viewController id="exe-eP-xcy" sceneMemberID="viewController">
+                <viewController id="exe-eP-xcy" customClass="HomeViewController" customModule="TexasMeat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oKA-8p-ATa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,6 +33,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="cOe-yW-RoP"/>
+                    <connections>
+                        <outlet property="tableView" destination="Ea7-Fi-850" id="dhL-7E-mdA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oG8-8L-872" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -354,6 +357,7 @@
         <scene sceneID="ZPK-1S-vlN">
             <objects>
                 <tabBarController id="Vgh-8F-2lm" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="vAZ-AS-pm0"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kOq-dS-RpF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
