@@ -27,6 +27,3 @@ class SwipeCollectionViewController: UICollectionViewController {
 
 }
 
-extension SwipeCollectionViewController: UICollectionViewDelegateFlowLayout {
-    
-}

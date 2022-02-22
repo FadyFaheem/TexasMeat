@@ -15,18 +15,22 @@ class StartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if UserDefaults.standard.object(forKey: Constants.tutorialPlayableKey) != nil {
-            tutorialPlayable = defaults.bool(forKey: Constants.tutorialPlayableKey)
-        } else {
-            TutorialSet(true)
-        }    }
+    }
     
     func TutorialSet(_ isTrue: Bool){
         defaults.set(isTrue, forKey: Constants.tutorialPlayableKey)
         tutorialPlayable = defaults.bool(forKey: Constants.tutorialPlayableKey)
     }
     
-    @IBAction func startButton(_ sender: UIButton) {
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if UserDefaults.standard.object(forKey: Constants.tutorialPlayableKey) != nil {
+            tutorialPlayable = defaults.bool(forKey: Constants.tutorialPlayableKey)
+        } else {
+            TutorialSet(true)
+        }
+        
         if (tutorialPlayable) {
             performSegue(withIdentifier: Constants.segues.segueStartTut, sender: self)
         } else if (!tutorialPlayable) {
@@ -34,5 +38,4 @@ class StartViewController: UIViewController {
         }
     }
     
-
 }

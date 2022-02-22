@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4c1-Rx-5cl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7Oq-2e-riD">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -7,6 +7,7 @@
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -354,43 +355,100 @@
             <point key="canvasLocation" x="-893" y="-591"/>
         </scene>
         <!--Start View Controller-->
-        <scene sceneID="z32-ya-iVA">
+        <scene sceneID="WOs-Uq-g7a">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="4c1-Rx-5cl" customClass="StartViewController" customModule="TexasMeat" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="VYx-NM-vst">
+                <viewController id="7Oq-2e-riD" customClass="StartViewController" customModule="TexasMeat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kOT-jg-xzr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <viewLayoutGuide key="safeArea" id="kyP-A3-AU2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <segue destination="Vgh-8F-2lm" kind="presentation" identifier="StartToHome" id="63D-hD-H8n"/>
+                        <segue destination="pGq-6t-aJC" kind="presentation" id="wJG-YE-U0d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R2m-n8-aP6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2083" y="-2099"/>
+        </scene>
+        <!--Onboarding View Controller-->
+        <scene sceneID="gqN-Ok-2JM">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="pGq-6t-aJC" customClass="OnboardingViewController" customModule="TexasMeat" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Uzx-SB-F05">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NwJ-TX-s4b">
-                                <rect key="frame" x="136" y="409" width="142.5" height="78.5"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpM-Hu-Tz4">
+                                <rect key="frame" x="163.5" y="743" width="87" height="49"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Start">
-                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="55"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Next">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                    <color key="baseForegroundColor" name="BlackToWhite"/>
+                                    <color key="baseBackgroundColor" name="WhiteToBlack"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="startButton:" destination="4c1-Rx-5cl" eventType="touchUpInside" id="hwA-Ur-Zsf"/>
+                                    <action selector="nxtButtonPressed:" destination="pGq-6t-aJC" eventType="touchUpInside" id="dVW-PC-hRI"/>
                                 </connections>
                             </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="7of-Yh-hYi">
+                                <rect key="frame" x="141" y="692" width="132.5" height="26"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" systemColor="labelColor"/>
+                            </pageControl>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="qI5-Mq-mcd">
+                                <rect key="frame" x="0.0" y="44" width="414" height="628"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WSe-1o-6iv">
+                                    <size key="itemSize" width="414" height="648"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="tutCellReusable" id="ZGi-hX-Xyf">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="648"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="am1-xO-DPE">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="648"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="414" height="648"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="tsS-rM-GoB"/>
+                        <viewLayoutGuide key="safeArea" id="Llk-3D-6o8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="NwJ-TX-s4b" firstAttribute="centerY" secondItem="VYx-NM-vst" secondAttribute="centerY" id="gg8-mn-Kd8"/>
-                            <constraint firstItem="NwJ-TX-s4b" firstAttribute="centerX" secondItem="VYx-NM-vst" secondAttribute="centerX" id="sY4-aH-dJh"/>
+                            <constraint firstItem="qI5-Mq-mcd" firstAttribute="top" secondItem="Llk-3D-6o8" secondAttribute="top" id="Ckd-MF-5am"/>
+                            <constraint firstItem="qI5-Mq-mcd" firstAttribute="leading" secondItem="Llk-3D-6o8" secondAttribute="leading" id="DlY-wn-1cI"/>
+                            <constraint firstItem="7of-Yh-hYi" firstAttribute="top" secondItem="qI5-Mq-mcd" secondAttribute="bottom" constant="20" id="Ki2-XX-UMq"/>
+                            <constraint firstItem="lpM-Hu-Tz4" firstAttribute="top" secondItem="7of-Yh-hYi" secondAttribute="bottom" constant="25" id="aCn-mL-bhy"/>
+                            <constraint firstItem="Llk-3D-6o8" firstAttribute="bottom" secondItem="lpM-Hu-Tz4" secondAttribute="bottom" constant="70" id="l5o-Pc-wb9"/>
+                            <constraint firstItem="lpM-Hu-Tz4" firstAttribute="centerX" secondItem="Uzx-SB-F05" secondAttribute="centerX" id="leD-q9-BL7"/>
+                            <constraint firstItem="7of-Yh-hYi" firstAttribute="centerX" secondItem="Uzx-SB-F05" secondAttribute="centerX" id="oL3-l7-ngK"/>
+                            <constraint firstItem="Llk-3D-6o8" firstAttribute="trailing" secondItem="qI5-Mq-mcd" secondAttribute="trailing" id="xU7-fF-GYv"/>
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="Vgh-8F-2lm" kind="presentation" identifier="StartToHome" modalPresentationStyle="fullScreen" id="RDP-0Z-rGh"/>
+                        <outlet property="collectionView" destination="qI5-Mq-mcd" id="uRb-DX-BUp"/>
+                        <outlet property="nextButton" destination="lpM-Hu-Tz4" id="aF4-4P-OOx"/>
+                        <outlet property="nxtButton" destination="lpM-Hu-Tz4" id="6bI-0T-nAS"/>
+                        <outlet property="pageControl" destination="7of-Yh-hYi" id="A73-oa-jO2"/>
+                        <outlet property="pageController" destination="7of-Yh-hYi" id="6YN-Km-ozg"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="F0K-1L-JP2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gXq-F3-lXp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2082.608695652174" y="-2087.9464285714284"/>
+            <point key="canvasLocation" x="3002.898550724638" y="-2099.3303571428569"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ZPK-1S-vlN">
             <objects>
-                <tabBarController modalPresentationStyle="fullScreen" id="Vgh-8F-2lm" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="mainController" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="Vgh-8F-2lm" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="vAZ-AS-pm0"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kOq-dS-RpF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -495,9 +553,18 @@
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="slider.vertical.3" catalog="system" width="128" height="111"/>
+        <namedColor name="BlackToWhite">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="CameraColor">
             <color red="0.12999999523162842" green="0.12999999523162842" blue="0.12999999523162842" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <namedColor name="WhiteToBlack">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
