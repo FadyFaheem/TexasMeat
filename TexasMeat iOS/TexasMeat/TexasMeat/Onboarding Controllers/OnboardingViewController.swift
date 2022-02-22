@@ -12,6 +12,9 @@ class OnboardingViewController: UIViewController {
     @IBOutlet var pageControl: UIPageControl!
     @IBOutlet var collectionView: UICollectionView!
     @IBOutlet var nxtButton: UIButton!
+    
+    var slides = [OnboardingSlide(description: "Cool Label Text", image: #imageLiteral(resourceName: "yp_play"))]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
