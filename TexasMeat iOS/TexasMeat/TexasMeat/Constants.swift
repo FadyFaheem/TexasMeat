@@ -11,7 +11,7 @@ struct Constants {
     static let reusableBasicCell = "ReusableBasicCell"
     static let resuableBasicCellNib = "BasicTableViewCell"
     static let tutorialPlayableKey = "playTutorial"
-    static let tutorialCell = "tutCellReusable"
+    static let tutorialCell = "OnboardingCollectionViewCell"
     
     struct segues {
         static let segueStartHome = "StartToHome"

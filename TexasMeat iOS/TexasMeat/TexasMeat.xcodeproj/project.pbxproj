@@ -21,8 +21,6 @@
 		31CF935F27BF3C8100275F5B /* BasicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CF935E27BF3C8100275F5B /* BasicCell.swift */; };
 		31CF936127BF3DA900275F5B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CF936027BF3DA900275F5B /* Constants.swift */; };
 		31CF936327C35DE800275F5B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31CF936227C35DE800275F5B /* SettingsViewController.swift */; };
-		31ED08D027C56CED00971D8E /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ED08CF27C56CED00971D8E /* OnboardingViewController.swift */; };
-		31ED08D227C5755000971D8E /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ED08D127C5755000971D8E /* OnboardingSlide.swift */; };
 		3BCE636DD971A8CE453EE437 /* Pods_TexasMeat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC37C21308FA19A0C95E6402 /* Pods_TexasMeat.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,8 +42,6 @@
 		31CF935E27BF3C8100275F5B /* BasicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicCell.swift; sourceTree = "<group>"; };
 		31CF936027BF3DA900275F5B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		31CF936227C35DE800275F5B /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		31ED08CF27C56CED00971D8E /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
-		31ED08D127C5755000971D8E /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
 		BC37C21308FA19A0C95E6402 /* Pods_TexasMeat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TexasMeat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB8E4E832D5F9993791E98FB /* Pods-TexasMeat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TexasMeat.release.xcconfig"; path = "Target Support Files/Pods-TexasMeat/Pods-TexasMeat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,7 +148,6 @@
 		31B66CA227BE0F090048D727 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				31ED08CC27C56B4C00971D8E /* Onboarding Controllers */,
 				31B66C8F27BD9B250048D727 /* ImageDetectViewController.swift */,
 				31CF935827BF2CD700275F5B /* HomeViewController.swift */,
 				31CF936227C35DE800275F5B /* SettingsViewController.swift */,
@@ -164,17 +159,8 @@
 		31ED08C527C5655B00971D8E /* Swipe Controller */ = {
 			isa = PBXGroup;
 			children = (
-				31ED08D127C5755000971D8E /* OnboardingSlide.swift */,
 			);
 			path = "Swipe Controller";
-			sourceTree = "<group>";
-		};
-		31ED08CC27C56B4C00971D8E /* Onboarding Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				31ED08CF27C56CED00971D8E /* OnboardingViewController.swift */,
-			);
-			path = "Onboarding Controllers";
 			sourceTree = "<group>";
 		};
 		C3B75E0EFAF6E9654A02556E /* Frameworks */ = {
@@ -305,13 +291,11 @@
 				31B66C9027BD9B250048D727 /* ImageDetectViewController.swift in Sources */,
 				31CF935C27BF389300275F5B /* BasicTableViewCell.swift in Sources */,
 				31B66CA427BE119B0048D727 /* Inceptionv3.mlmodel in Sources */,
-				31ED08D227C5755000971D8E /* OnboardingSlide.swift in Sources */,
 				31B66C8C27BD9B250048D727 /* AppDelegate.swift in Sources */,
 				3199F5CC27C3F0A8005329A5 /* StartViewController.swift in Sources */,
 				31CF935F27BF3C8100275F5B /* BasicCell.swift in Sources */,
 				31B66C8E27BD9B250048D727 /* SceneDelegate.swift in Sources */,
 				31CF936127BF3DA900275F5B /* Constants.swift in Sources */,
-				31ED08D027C56CED00971D8E /* OnboardingViewController.swift in Sources */,
 				31CF936327C35DE800275F5B /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

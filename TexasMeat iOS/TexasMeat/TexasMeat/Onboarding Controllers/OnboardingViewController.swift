@@ -13,12 +13,11 @@ class OnboardingViewController: UIViewController {
     @IBOutlet var collectionView: UICollectionView!
     @IBOutlet var nxtButton: UIButton!
     
-    var slides = [OnboardingSlide(description: "Cool Label Text", image: #imageLiteral(resourceName: "yp_play"))]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        collectionView.delegate = self
+        collectionView.dataSource = self
     }
     
 
@@ -26,4 +25,17 @@ class OnboardingViewController: UIViewController {
     }
     
 
+}
+
+extension OnboardingViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.tutorialCell, for: indexPath) as! OnboardingCollectionViewCell
+        return cell
+    }
+    
+    
 }
