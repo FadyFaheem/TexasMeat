@@ -15,5 +15,9 @@ class SettingsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func restartTutButtonPressed(_ sender: UIButton) {
+        UserDefaults.standard.set(true, forKey: Constants.tutorialPlayableKey)
+        performSegue(withIdentifier: Constants.segues.segueSetStart, sender: self)
+    }
+    
 }

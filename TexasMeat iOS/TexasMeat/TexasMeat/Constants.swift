@@ -17,5 +17,6 @@ struct Constants {
         static let segueStartHome = "StartToHome"
         static let segueStartTut = "StartToTutorial"
         static let segueTutHome = "TutorialToHome"
+        static let segueSetStart = "SettingsToStart"
     }
 }

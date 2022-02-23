@@ -45,26 +45,31 @@
         <!--Settings-->
         <scene sceneID="PI5-uO-46G">
             <objects>
-                <viewController id="qsd-Jy-178" sceneMemberID="viewController">
+                <viewController id="qsd-Jy-178" customClass="SettingsViewController" customModule="TexasMeat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gbp-4I-OCq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="4UZ-pG-waQ">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="onm-2q-uPU">
+                                <rect key="frame" x="145.5" y="432.5" width="123" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Restart Tutorial"/>
+                                <connections>
+                                    <action selector="restartTutButtonPressed:" destination="qsd-Jy-178" eventType="touchUpInside" id="fms-yB-8d4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WsR-JP-myb"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="4UZ-pG-waQ" firstAttribute="trailing" secondItem="WsR-JP-myb" secondAttribute="trailing" id="4xi-fN-7es"/>
-                            <constraint firstItem="4UZ-pG-waQ" firstAttribute="bottom" secondItem="WsR-JP-myb" secondAttribute="bottom" id="68i-4R-pxY"/>
-                            <constraint firstItem="4UZ-pG-waQ" firstAttribute="leading" secondItem="WsR-JP-myb" secondAttribute="leading" id="Xdg-wM-29y"/>
-                            <constraint firstItem="4UZ-pG-waQ" firstAttribute="top" secondItem="WsR-JP-myb" secondAttribute="top" id="zJe-Yk-pPd"/>
+                            <constraint firstItem="onm-2q-uPU" firstAttribute="centerX" secondItem="gbp-4I-OCq" secondAttribute="centerX" id="YXi-mR-vqc"/>
+                            <constraint firstItem="onm-2q-uPU" firstAttribute="centerY" secondItem="gbp-4I-OCq" secondAttribute="centerY" id="ZZ9-SH-X01"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="tbY-Ey-4b1"/>
+                    <connections>
+                        <segue destination="7Oq-2e-riD" kind="presentation" identifier="SettingsToStart" id="p4e-so-gDY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rbW-pT-o5e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -357,7 +362,7 @@
         <!--Start View Controller-->
         <scene sceneID="WOs-Uq-g7a">
             <objects>
-                <viewController id="7Oq-2e-riD" customClass="StartViewController" customModule="TexasMeat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="7Oq-2e-riD" customClass="StartViewController" customModule="TexasMeat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kOT-jg-xzr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -402,7 +407,7 @@
                                                     <rect key="frame" x="79" y="137.5" width="256" height="350"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ncc-EX-Jv4">
-                                                            <rect key="frame" x="8" y="0.0" width="240" height="255"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="256" height="255"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="f asdf  af asdf  af asdf  af asdf  af asddasdsadasdsadasdasdsadsadsadsadsa" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJE-6T-ZRT">
                                                             <rect key="frame" x="1" y="275" width="254.5" height="75"/>
@@ -584,7 +589,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="HOL-3c-nQN"/>
+        <segue reference="63D-hD-H8n"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="house.fill" catalog="system" width="128" height="106"/>
