@@ -14,7 +14,6 @@ class StartViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     func TutorialSet(_ isTrue: Bool){
