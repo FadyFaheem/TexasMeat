@@ -1,5 +1,5 @@
 # TexasMeat
-The official repo for Texas Meat iOS App.
+The official repo for Texas Meat iOS App. Sadly an uncompleted project of mine.
 
 ## What is this?
 Texas Meat is an app developed using Swift and CoreML. The use case for Texas Meat is using machine learning to find the best meat using image itteration and give a customer the best experience.
